@@ -65,9 +65,10 @@
 						<a href="http://www.cancerresearchuk.org">
 							<img height="100" data-src="Cancer_Research_UK.png" alt="Cancer Research UK">
 						</a>
-						<li>£522m raised last year</li>
-						<li>40,000+ Volnteers</li>
-						<li>survival rates have doubled over the past 40 years</li>
+						<p>Over the last 40 years, cancer survival rates in the UK have doubled.
+In the 1970s just a quarter of people survived. Today that figure is half. </p>
+						<p>Our ambition is to accelerate progress and see three-quarters
+of patients surviving the disease within the next 20 years. </p>
 						<li>4 Million visitors per month to the main .org site</li>
 						<aside class="notes">
 							Cancer Research UK’s vision is to bring forward the day when all
@@ -93,6 +94,20 @@ There are roughly 15 developers & 8 testers testers (QAs)
 				
 						</aside>
 					</section>
+					<section>
+						<a href="http://www.cancerresearchuk.org">
+							<img height="100" data-src="Cancer_Research_UK.png" alt="Cancer Research UK">
+						</a>
+					
+						<li>4 Million visitors per month to the main .org site</li>
+						<li>online revenue statistic in here</li>
+						<aside class="notes">
+					
+
+
+				
+						</aside>
+					</section>
 				</section>
 
 				<section>
@@ -105,10 +120,10 @@ There are roughly 15 developers & 8 testers testers (QAs)
 				  <section>
 							<a href="http://www.manifesto.co.uk">
 								<img height="100" data-src="manifesto-logo-large.png" alt="Manifesto Digital">
-							</a>
-						<p><li>Full service digital agency</li>
-                <li>Start up pace with grown up results</li>
-               <aside class="notes"><p> - An award-winning full service digital agency using various CMS to provde website solutions<br/>
+							</a><p>We’re an award winning London based digital agency that loves ideas, design and technology </p>
+						<p>
+                We aim to make people’s lives better, easier, fairer, more interesting or fun with great strategy, engaging campaigns and rock solid technology. </p>
+               <aside class="notes"><p>An award-winning full service digital agency using various CMS to provde website solutions<br/>
 						    - Bring clever creative and technical people together<br/>
 						    - We make people’s lives better, easier, fairer, more interesting and fun through the use of technology.<br/>
                 - We believe in doing this we will deliver for our customers, their customers and our team.</p>Start up pace with grown up results
@@ -310,16 +325,22 @@ Then I should see "Last name should be at least 2 characters long"</code></pre>
 					<section>
 						<h2>Putting it together</h2>
 				  </section>
-				  <section data-transition="fade-out">
-				  		<img src="https://docs.google.com/drawings/d/1JKCr2ieYpIKPwCYEnhB2mcnLKFtBClS7IyXyipEe41A/pub?w=1440&amp;h=1080">
-				  		<aside =class="notes">
-				  			Maybe just use text for developers so not to confuse it with a product
-
-				  			symbol to represent tema as well
-				  		</aside>
-					</section>
+			
 					<section data-transition="fade-in fade-out">
-							<img src="https://docs.google.com/drawings/d/1oHoqJu0OP6BERZFZWmd6DtttONKs7qoH4gAFjqgWQo8/pub?w=1440&amp;h=1080"></section>
+							<img src="https://docs.google.com/drawings/d/1oHoqJu0OP6BERZFZWmd6DtttONKs7qoH4gAFjqgWQo8/pub?w=1440&amp;h=1080">
+							<aside =class="notes">
+				  			Developer commits code
+				  			when developer happy PR created on Github
+				  			Jenkins noticed the PR then starts the job
+				  			creates a new EC2 instance
+				  			pulls the code down to it
+				  			builds the site on the EC2 instance (privatley)
+				  			runs all the Behat scripts on that instance
+				  			reports back to Jenkins master junit reports
+				  			Jenkins then reports back to Developers (via slack) - so that everyone can joke.. who broke  thr build this time??? pause for laughs...
+				  			Developer can then either update the PR & pass to antoher dev for approval, or delete the PR and submit a new one for jenkins to test.
+
+				  		</aside></section>
 					</section>
 					<section>
 						<section>
