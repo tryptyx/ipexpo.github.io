@@ -65,9 +65,32 @@
 						<a href="http://www.cancerresearchuk.org">
 							<img height="100" data-src="Cancer_Research_UK.svg" alt="Cancer Research UK">
 						</a>
-						<p>Bit of blurb about CRUK here...</p>
+						<li>£522m raised last year</li>
+						<li>40,000+ Volnteers</li>
+						<li>survival rates have doubled over the past 40 years</li>
+						<li>4 Million visitors per month to the main .org site</li>
 						<aside class="notes">
-							Cancer research 						
+							Cancer Research UK’s vision is to bring forward the day when all
+cancers are cured.
+Over the last 40 years, cancer survival rates in the UK have doubled.
+In the 1970s just a quarter of people survived. Today that figure is half.
+Our ambition is to accelerate progress and see three-quarters
+of patients surviving the disease within the next 20 years. 	
+
+£522m
+Total fundraising income was up
+7% on last year.
+£464m
+Total spend on charitable activities was up
+
+We fund over 4,000 scientists, doctors and nurses
+
+A high percentage off this reveinue is genretated via the main .org site so in order to do this there are 5 dedicated Scrum development teams cratin gnew features and refactoring code aworking alonsiges the SysAdmin IT/OPs department working to eep the website upcoming
+There are roughly 15 developers & 8 testers testers (QAs)
+						  How drupal can be used inside CRUK?
+
+
+				
 						</aside>
 					</section>
 				</section>
@@ -83,7 +106,16 @@
 							<a href="http://www.manifesto.co.uk">
 								<img height="100" data-src="manifesto-logo-large.png" alt="Manifesto Digital">
 							</a>
-						<p>Bit of blurb about Manifesto here...</p>
+						<p><li>Full service digital agency</li>
+                <li>Start up pace with grown up results</li>
+               <aside class="notes"><p> - An award-winning full service digital agency using various CMS to provde website solutions<br/>
+						    - Bring clever creative and technical people together<br/>
+						    - We make people’s lives better, easier, fairer, more interesting and fun through the use of technology.<br/>
+                - We believe in doing this we will deliver for our customers, their customers and our team.</p>Start up pace with grown up results
+
+                we have been working with cancer reasuck since the company was formed 3 years ago... by an ex CRUK employee!!        
+
+                We assist acrros sall of their technolgy from JAVA Race fir Life platform to the main Durpla based .org site    and now wea are aassistng with defing the process for CI/CD</aside>
 				  </section>
 				</section>
 
@@ -94,6 +126,10 @@
 						<p class="fragment">Deploy whenever</p>
 						<p class="fragment">Trust the tests</p>
 						<aside class="notes">
+						I stretd witha mnisto as an senior drupal dev and was asked to asssit wwith some CRUK dev work... while doing htis I donoted a few gaps in their dpelymet porceduers, etc and started bring in automated testing and deplyent sripts 
+					 current deply cuycle are every four weeks but, with MAnul, tes thats tigh r manual regression testging taking over 4 days... so this delays proceses....   deplymets tensd t be delayed when bugs are found late in the cycle
+
+					 so , reducung the amount of manual testing needed 
 						SysAdmins & ops want less manual steps for deployment.<br/>
 
 						Developers want to be able to deploy when they want.<br/>
@@ -114,12 +150,17 @@
 							<img height="200" data-src="drupal.png" alt="Drupal">
 						</a>
 						<aside class="notes">
-						  Drupal is at the core of the main CRUK site as well as a few other smaller platforms. There are roughly 25 full time developrs (Front, back & ops) as well as a dozen or so testers (QAs)
-						  How drupal can be used inside CRUK?
+						  Drupal is at the core of the main CRUK site as well as a few other smaller  platforms. 
 
-						  
+						  (posible drupalcon pic?)
 
-							Drupal is a highly customisable Open Source CMS, massive community behind it, we should know as we were at DrupalCon! anyone can suggest changes to the code, used for most of CRUK sites & we're working at rteplacing some of the old CMSs withnew systems based on Drupal	Drupal is a highly customisable Open Source CMS, massive community behind it, we should know as we were at DrupalCon! anyone can suggest changes to the code, used for most of CRUK sites & we're working at rteplacing some of the old CMSs withnew systems based on Drupal					
+							Drupal is a highly customisable Open Source CMS, massive community behind it, we should know as we were at DrupalCon! anyone can suggest changes to the code, used for most of CRUK sites 		
+
+							bot more about drupa needs to go into here
+
+							Why did CRUK choose drupal? free, open source, 	large ocmmunity, so great talnt pool to recruit from
+
+							highly extnbdalbe,  we should know as there are roughly 60 custom modules specific to CRUK environemnt but we developed one module to be given back to the community caled Harmony, hich is a forum based module isnide the main .org site of which we have opensourced and is currently in use on at least 3 large wbsites that we know of. 
 						</aside>
 					</section>
 					<section>
@@ -128,12 +169,13 @@
 							<img height="200" data-src="jenkins.png" alt="Drupal">
 						</a>
 						<aside class="notes">
-							Jenkins is Open source, written in Java, mainly for Java stuff but due to its highly cusomisable structure it can turn to pretty much anything, and can easily write own plugins to add to the community. USed by companys such as Michelin, Facebook, google, eBay, Tumblr, Nasa and the UK Governemnt - source: https://wiki.jenkins-ci.org/pages/viewpage.action?pageId=58001258		
+							Jenkins is Open source, written in Java, mainly for Java application but due to its highly cusomisable structure it can turn to pretty much anything, and can easily write own plugins to add to the community. USed by companys such as Michelin, Facebook, google, eBay, Tumblr, Nasa and the UK Governemnt - source: https://wiki.jenkins-ci.org/pages/viewpage.action?pageId=58001258		
 
 
 							Jenkins is used quite extensivley throughout cancer research UK, with teh developers running automated tests & builds using it and the SysAdmins using it to build Docker containers and  run absible scrripts against self hosted servers.
 
-							Cancer Research Technology are also using it to feploy thier new Citezen Science system based on pybosa scripts
+
+							Cancer Research Technology are also using it to deploy thier new Citezen Science system based on pybosa scripts
 						</aside>
 					</section>	
 					<section>
@@ -142,7 +184,9 @@
 							<img height="200" data-src="Octocat.png" alt="GitHub">
 						</a>
 						<aside class="notes">
-							webhooks, pull requests, etc...					
+							CRUK chose to sue github as it is free but mainly beacuse most devloepr sworking wiht OPens source techonolgies all use Github 
+
+							Freatues on git hub that we are using are pull requests and web hooks that allow the system to talk to extrantl services		
 						</aside>
 					</section>
 					<section>
